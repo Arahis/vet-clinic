@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #f78263;
+  --secondary-color: #a5e2e4;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* color: rgb(var(--foreground-rgb)); */
+  /* background: linear-gradient(
+      to bottom,
+      transparent,
+      rgb(var(--background-end-rgb))
+    )
+    rgb(var(--background-start-rgb)); */
+}
+
+.menu-item__hover {
+  &:after {
+    content: "";
+    width: 100%;
+    height: 4px;
+    display: block;
+    position: relative;
+    top: 8px;
+    background-color: var(--primary-color);
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.25s ease-in-out;
+  }
+  &:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+}
+
+.section-wrapper {
+  @apply px-24 py-24 m-4;
+}
+
+.footer-wrapper {
+  @apply pt-14 px-24 pb-4 mt-4 mx-4;
+}
+
+.footer-section-title {
+  @apply text-2xl mb-2 font-semibold;
+}
+
+.services__item {
+  @apply p-8 font-accent text-2xl bg-white;
+}
+
+.item__border {
+  @apply rounded-2xl border-4 shadow-lg;
+}
+
+.gallery__container {
+  @apply overflow-x-auto p-20;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.gallery__container::-webkit-scrollbar {
+  display: none;
+}
+
+/* li.selected {
+  background: #eee;
+} */
