@@ -2,8 +2,8 @@ import Image from "next/image";
 import Hero from "./components/hero";
 import Services from "./components/services";
 import FAQ from "./components/faq";
-import Doctors from "./components/medics";
 import Gallery from "./components/gallery";
+import Medics from "./components/medics";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
       <Hero />
       <Services />
       <FAQ />
-      <Doctors />
+      <Medics />
       <Gallery />
     </main>
   );
