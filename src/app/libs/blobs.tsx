@@ -58,7 +58,7 @@ const Blob = ({ blob }: { blob: string[] }) => {
   );
 };
 
-export const BlobTop = () => (
+const Top = () => (
   <div
     id="blob"
     className="w-[900px] absolute top-[-300px] left-20 -z-10 fill-[var(--secondary-color)]"
@@ -67,14 +67,42 @@ export const BlobTop = () => (
   </div>
 );
 
-export const BlobBottom = () => (
+const Bottom = () => (
   <div className="w-[1000px] absolute -z-10 -left-80 top-[600px] fill-[var(--primary-color)]">
     <Blob blob={blobs.two} />
   </div>
 );
 
-export const BlobSide = () => (
+const Side = () => (
   <div className="w-[1200px] absolute -z-10 -right-80 top-48 fill-[#fff8cc]">
     <Blob blob={blobs.two} />
   </div>
+);
+
+const One = () => <Blob blob={blobs.one} />;
+const Two = () => <Blob blob={blobs.two} />;
+const Three = () => <Blob blob={blobs.three} />;
+
+export const BlobsHero = () => {
+  return;
+};
+
+export const BlobsMedics = () => {
+  return;
+};
+
+BlobsHero.Top = Top;
+BlobsHero.Bottom = Bottom;
+BlobsHero.Side = Side;
+
+BlobsMedics.One = One;
+BlobsMedics.Two = Two;
+BlobsMedics.Three = Three;
+
+export const Blobs = () => (
+  <>
+    <BlobsHero.Top />
+    <BlobsHero.Side />
+    <BlobsHero.Bottom />
+  </>
 );

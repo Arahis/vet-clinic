@@ -1,12 +1,9 @@
 import type { Metadata } from "next";
 import { Inter, IBM_Plex_Serif } from "next/font/google";
 import "./globals.scss";
-import Image from "next/image";
-import Logo from "../../public/vet-logo.svg";
-import Link from "next/link";
 import Footer from "./components/footer";
-import Navigation from "./components/navigation";
-import { BlobBottom, BlobSide, BlobTop } from "./libs/blobs";
+import { Blobs, BlobsHero } from "./libs/blobs";
+import Header from "./components/navigation";
 
 const inter = Inter({ subsets: ["latin"], variable: "--main-font" });
 const IBM = IBM_Plex_Serif({
@@ -28,13 +25,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable}, ${IBM.variable}`}>
-        <div className="container flex justify-between items-center mx-auto">
-          <BlobTop />
-          <BlobSide />
-          <Image src={Logo} alt="Vercel Logo" priority width={130} />
-          <Navigation />
-          <BlobBottom />
-        </div>
+        <Blobs />
+        <Header />
         {children}
         <Footer />
       </body>
