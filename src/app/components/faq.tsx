@@ -100,7 +100,10 @@ const AnswerText = ({
 
 const FAQ = () => {
   return (
-    <div className="section-wrapper" id="faq">
+    <div className="section-wrapper">
+      <h2 className="font-accent text-center text-4xl leading-tight font-semibold mb-32">
+        Частые вопросы
+      </h2>
       <div className="flex w-full items-start gap-8">
         <ul className="py-[50vh] w-full">
           {faqs.map(({ title, id }) => (
@@ -110,7 +113,10 @@ const FAQ = () => {
           ))}
         </ul>
         <div className="w-full sticky top-0 flex h-screen place-items-center ">
-          <div className="relative w-full aspect-square bg-slate-200 rounded-xl overflow-hidden ">
+          <div
+            id="faq"
+            className="relative w-full aspect-square bg-slate-200 rounded-xl overflow-hidden "
+          >
             {faqs.map(({ answer, id, gradient }) => (
               <AnswerText key={id} id={id} gradient={gradient}>
                 {answer}

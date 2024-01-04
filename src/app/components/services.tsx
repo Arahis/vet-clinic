@@ -3,10 +3,10 @@ import React from "react";
 const Services = () => {
   return (
     <div className="section-wrapper" id="services">
-      <h1 className="font-accent text-6xl leading-tight font-semibold mb-32">
+      <h2 className="font-accent text-6xl leading-tight font-semibold mb-32">
         Услуги нашей
         <br /> клиники
-      </h1>
+      </h2>
       <ul className="grid lg:grid-cols-4 md:grid-cols-3 xs:grid-cols-1 gap-8">
         <li className="services__item item__border border-orange-main">
           Хирургия

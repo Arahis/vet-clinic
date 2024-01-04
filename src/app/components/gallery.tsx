@@ -17,7 +17,6 @@ const ImageWithRatio = ({ img }: { img: string }) => {
 
   return (
     <div
-      id="gallery"
       className={classNames("relative shrink-0 h-[35vh]")}
       style={{ aspectRatio: `${ratio.naturalWidth}/${ratio.naturalHeight}` }}
     >
@@ -41,11 +40,19 @@ const ImageWithRatio = ({ img }: { img: string }) => {
 
 const Gallery = () => {
   return (
-    <div className="gallery__container">
-      <div className="flex gap-6">
-        {imgs.map((img) => (
-          <ImageWithRatio img={img} key={img} />
-        ))}
+    <div className="pt-40 pb-60 bg-slate-50">
+      <h2
+        id="gallery"
+        className="font-accent text-center text-4xl leading-tight font-semibold mb-32"
+      >
+        Галлерея
+      </h2>
+      <div className="gallery__container">
+        <div className="flex gap-1">
+          {imgs.map((img) => (
+            <ImageWithRatio img={img} key={img} />
+          ))}
+        </div>
       </div>
     </div>
   );

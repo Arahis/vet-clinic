@@ -55,7 +55,7 @@ body {
 }
 
 .footer-wrapper {
-  @apply pt-14 px-24 pb-4 mt-4 mx-4;
+  @apply pt-14 px-24 pb-4 mx-4;
 }
 
 .footer-section-title {
@@ -71,7 +71,7 @@ body {
 }
 
 .gallery__container {
-  @apply overflow-x-auto p-20;
+  @apply overflow-x-auto pl-20;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
