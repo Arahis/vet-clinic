@@ -3,7 +3,7 @@ import React from "react";
 const Services = () => {
   return (
     <div className="section-wrapper" id="services">
-      <h2 className="font-accent text-6xl leading-tight font-semibold mb-32">
+      <h2 className="font-accent text-6xl leading-tight font-semibold mb-32 text-end">
         Услуги нашей
         <br /> клиники
       </h2>

@@ -38,7 +38,7 @@ const photos = [
 const Medics = () => {
   return (
     <div className="section-wrapper" id="medics">
-      <h2 className="font-accent text-center text-4xl leading-tight font-semibold mb-32">
+      <h2 className="font-accent text-center text-5xl leading-tight font-semibold mb-32">
         Врачи клиники
       </h2>
       <ul className="grid grid-cols-3">

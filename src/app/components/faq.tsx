@@ -101,7 +101,7 @@ const AnswerText = ({
 const FAQ = () => {
   return (
     <div className="section-wrapper">
-      <h2 className="font-accent text-center text-4xl leading-tight font-semibold mb-32">
+      <h2 className="font-accent text-center text-5xl leading-tight font-semibold mb-32">
         Частые вопросы
       </h2>
       <div className="flex w-full items-start gap-8">

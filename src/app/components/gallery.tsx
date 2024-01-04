@@ -43,7 +43,7 @@ const Gallery = () => {
     <div className="pt-40 pb-60 bg-slate-50">
       <h2
         id="gallery"
-        className="font-accent text-center text-4xl leading-tight font-semibold mb-32"
+        className="font-accent text-center text-5xl leading-tight font-semibold mb-32"
       >
         Галлерея
       </h2>
