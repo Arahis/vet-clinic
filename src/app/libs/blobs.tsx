@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { PropsWithChildren } from "react";
 import { motion } from "framer-motion";
 
 const blobs = {
@@ -36,7 +36,7 @@ const blobs = {
   ],
 };
 
-const Blob = ({ blob }: { blob: string[] }) => {
+const BlobDefault = ({ blob }: { blob: string[] }) => {
   return (
     <svg
       viewBox="0 0 200 200"
@@ -63,33 +63,29 @@ const Top = () => (
     id="blob"
     className="w-[900px] absolute top-[-300px] left-20 -z-10 fill-[var(--secondary-color)]"
   >
-    <Blob blob={blobs.one} />
+    <BlobDefault blob={blobs.one} />
   </div>
 );
 
 const Bottom = () => (
   <div className="w-[1000px] absolute -z-10 -left-80 top-[600px] fill-[var(--primary-color)]">
-    <Blob blob={blobs.two} />
+    <BlobDefault blob={blobs.two} />
   </div>
 );
 
 const Side = () => (
   <div className="w-[1200px] absolute -z-10 -right-80 top-48 fill-[#fff8cc]">
-    <Blob blob={blobs.two} />
+    <BlobDefault blob={blobs.two} />
   </div>
 );
 
-const One = () => <Blob blob={blobs.one} />;
-const Two = () => <Blob blob={blobs.two} />;
-const Three = () => <Blob blob={blobs.three} />;
+const One = () => <BlobDefault blob={blobs.one} />;
+const Two = () => <BlobDefault blob={blobs.two} />;
+const Three = () => <BlobDefault blob={blobs.three} />;
 
-export const BlobsHero = () => {
-  return;
-};
+export const BlobsHero = ({ children }: PropsWithChildren) => <>{children}</>;
 
-export const BlobsMedics = () => {
-  return;
-};
+export const BlobsMedics = ({ children }: PropsWithChildren) => <>{children}</>;
 
 BlobsHero.Top = Top;
 BlobsHero.Bottom = Bottom;

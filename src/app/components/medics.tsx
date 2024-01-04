@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 
 import Image from "next/image";
@@ -28,7 +30,7 @@ const Doctors = () => {
           <div key={i} className="flex flex-col items-center">
             <div className="aspect-square w-2/5 mb-4 relative">
               <Image src={picture} alt={alt} className="bg-contain" />
-              {/* <BlobsMedics.One /> */}
+              <BlobsMedics.One />
             </div>
             {/* <li>{name}</li> */}
           </div>
