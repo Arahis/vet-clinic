@@ -63,7 +63,11 @@ body {
 }
 
 .services__item {
-  @apply p-8 font-accent text-2xl bg-white;
+  @apply p-8 font-accent text-2xl bg-white/75;
+}
+
+.other-services__item {
+  @apply px-8 py-6 font-accent text-2xl;
 }
 
 .item__border {

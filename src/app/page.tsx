@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="flex flex-col justify-between">
       <Hero />
-      <Services />
+      {/* <Services /> */}
       <FAQ />
       <Medics />
       <Gallery />

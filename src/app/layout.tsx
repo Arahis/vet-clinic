@@ -3,7 +3,6 @@ import { Inter, IBM_Plex_Serif } from "next/font/google";
 import "./globals.scss";
 import Footer from "./components/footer";
 import Header from "./components/navigation";
-import { Blobs } from "./components/blobsLayout";
 
 const inter = Inter({ subsets: ["latin"], variable: "--main-font" });
 const IBM = IBM_Plex_Serif({
@@ -25,7 +24,6 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable}, ${IBM.variable}`}>
-        <Blobs />
         <Header />
         {children}
         <Footer />
