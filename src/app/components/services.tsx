@@ -2,11 +2,7 @@ import React from "react";
 
 const Services = () => {
   return (
-    <div className="" id="services">
-      {/* <h2 className="font-accent text-6xl leading-tight font-semibold mb-32 text-end">
-        Услуги нашей
-        <br /> клиники
-      </h2> */}
+    <div id="services">
       <ul className="flex gap-8 items-start">
         <div className="grid gap-8 mt-20  flex-1">
           <li className="services__item item__border border-orange-main">

@@ -5,6 +5,7 @@ import Footer from "./components/footer";
 import Navigation from "./components/navigation";
 import Image from "next/image";
 import Logo from "../../public/vet-logo.svg";
+import classNames from "classnames";
 
 const inter = Inter({ subsets: ["latin"], variable: "--main-font" });
 const IBM = IBM_Plex_Serif({
@@ -25,12 +26,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.variable}, ${IBM.variable}`}>
-        <header className="flex justify-center items-center w-[100px] py-4 bg-slate-100">
+      <body className={classNames(`${inter.variable}, ${IBM.variable}`)}>
+        <header className="flex justify-center items-center w-28 py-4 bg-slate-100">
           <Image src={Logo} alt="Vercel Logo" priority width={80} />
         </header>
-        <div className="flex">
-          <div className="sticky top-0 h-full basis-[120px] shrink-0">
+        <div className="flex gap-4">
+          <div className="sticky top-0 h-full basis-28 shrink-0">
             <Navigation />
           </div>
           {children}
