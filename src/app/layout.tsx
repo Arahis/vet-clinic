@@ -31,7 +31,7 @@ export default function RootLayout({
           <Image src={Logo} alt="Vercel Logo" priority width={80} />
         </header>
         <div className="flex gap-4">
-          <div className="sticky top-0 h-full basis-28 shrink-0">
+          <div className="sticky top-0 h-[770px] basis-28 shrink-0">
             <Navigation />
           </div>
           {children}
