@@ -17,7 +17,7 @@ const ImageWithRatio = ({ img }: { img: string }) => {
 
   return (
     <div
-      className={classNames("relative shrink-0 h-[35vh]")}
+      className="relative shrink-0 h-[35vh]"
       style={{ aspectRatio: `${ratio.naturalWidth}/${ratio.naturalHeight}` }}
     >
       <Image
@@ -40,7 +40,7 @@ const ImageWithRatio = ({ img }: { img: string }) => {
 
 const Gallery = () => {
   return (
-    <div className="pt-40 pb-60 bg-slate-50">
+    <div className="pt-40 pb-60 bg-slate-50 max-w-[calc(100vw-7rem-2rem)]">
       <h2
         id="gallery"
         className="font-accent text-center text-5xl leading-tight font-semibold mb-32"

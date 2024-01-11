@@ -7,9 +7,8 @@ import Medics from "./components/medics";
 
 export default function Home() {
   return (
-    <main className="flex flex-col justify-between">
+    <main className="flex flex-col gap-80">
       <Hero />
-      {/* <Services /> */}
       <FAQ />
       <Medics />
       <Gallery />

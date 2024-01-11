@@ -1,6 +1,6 @@
 import { BlobOne, BlobThree, BlobTwo } from "../libs/blobs";
 
-const BlobTop = () => (
+export const BlobTop = () => (
   <div
     id="blob"
     className="w-[900px] absolute top-[-300px] left-20 -z-10 fill-[var(--secondary-color)]"
@@ -22,9 +22,9 @@ const BlobSide = () => (
 );
 
 export const Blobs = () => (
-  <>
+  <div className="overflow-hidden">
     <BlobTop />
     <BlobSide />
     <BlobBottom />
-  </>
+  </div>
 );

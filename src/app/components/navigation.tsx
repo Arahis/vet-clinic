@@ -1,7 +1,3 @@
-"use client";
-
-import Image from "next/image";
-import Logo from "../../../public/vet-logo.svg";
 import Link from "next/link";
 
 const navLinks: { name: string; anchor: string }[] = [
@@ -12,22 +8,18 @@ const navLinks: { name: string; anchor: string }[] = [
   { name: "Контакты", anchor: "#contacts" },
 ];
 
-const Header = () => {
+const Navigation = () => {
   return (
-    <header className="container flex justify-between items-center mx-auto my-4">
-      <Image src={Logo} alt="Vercel Logo" priority width={130} />
-
-      <nav>
-        <ul className="flex gap-8 text-xl">
-          {navLinks.map((l) => (
-            <li key={l.name} className="menu-item__hover">
-              <Link href={l.anchor}>{l.name}</Link>
-            </li>
-          ))}
-        </ul>
-      </nav>
-    </header>
+    <nav className="flex rounded-tr-3xl rotate-90 origin-top-left absolute top-0 bg-slate-100 h-28 left-28 justify-center items-center min-w-[770px]">
+      <ul className="flex gap-8 text-xl p-8 justify-center">
+        {navLinks.map((l) => (
+          <li key={l.name} className="menu-item__hover">
+            <Link href={l.anchor}>{l.name}</Link>
+          </li>
+        ))}
+      </ul>
+    </nav>
   );
 };
 
-export default Header;
+export default Navigation;

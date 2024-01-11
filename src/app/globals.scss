@@ -32,6 +32,7 @@ body {
 }
 
 .menu-item__hover {
+  text-wrap: nowrap;
   &:after {
     content: "";
     width: 100%;
@@ -51,7 +52,7 @@ body {
 }
 
 .section-wrapper {
-  @apply px-24 py-24 m-4;
+  @apply px-14;
 }
 
 .footer-wrapper {

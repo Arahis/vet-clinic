@@ -88,7 +88,7 @@ const AnswerText = ({
   return (
     <div
       className={classNames(
-        "absolute h-full w-full text-xl p-8 transition-opacity inset-0 bg-gradient-to-br",
+        "absolute h-full w-full text-xl p-24 transition-opacity inset-0 bg-gradient-to-br",
         gradient,
         imageId === id ? "opacity-100" : "opacity-0"
       )}
