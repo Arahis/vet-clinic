@@ -7,6 +7,7 @@ import Doctor1 from "../../../../public/panarin.svg";
 import Doctor2 from "../../../../public/volobuev.svg";
 import Doctor3 from "../../../../public/volobueva.svg";
 import { BlobMedicOne, BlobMedicTwo, BlobMedicThree } from "./blobs";
+import SectionTitle from "../section-title";
 
 const photos = [
   {
@@ -38,19 +39,17 @@ const photos = [
 const Medics = () => {
   return (
     <div className="section-wrapper" id="medics">
-      <h2 className="font-accent text-center text-5xl leading-tight font-semibold mb-32">
-        Врачи клиники
-      </h2>
-      <ul className="grid grid-cols-3">
+      <SectionTitle>Врачи клиники</SectionTitle>
+      <ul className="grid grid-cols-2 md:grid-cols-3 gap-2">
         {photos.map(({ name, surname, picture, alt, blob }, i) => (
           <li key={i} className="flex flex-col items-center">
-            <div className="aspect-square w-2/5 mb-12 relative flex justify-center items-center">
+            <div className="aspect-square w-3/5 md:w-2/5 mb-8 md:mb-12 relative flex justify-center items-center">
               <Image src={picture} alt={alt} className="bg-contain" />
               {blob}
             </div>
-            <div className="text-center">
-              <p className="text-lg font-semibold">{surname}</p>
-              <p className="text-lg">{name}</p>
+            <div className="text-center md:text-lg">
+              <p className="font-semibold">{surname}</p>
+              <p>{name}</p>
             </div>
           </li>
         ))}
