@@ -5,7 +5,7 @@ import Medics from "./components/medics";
 
 export default function Home() {
   return (
-    <main className="flex flex-col gap-32 md:gap-80">
+    <main className="flex flex-col gap-32 md:gap-40 xl:gap-80">
       <Hero />
       <FAQ />
       <Medics />

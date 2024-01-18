@@ -40,10 +40,10 @@ const Medics = () => {
   return (
     <div className="section-wrapper" id="medics">
       <SectionTitle>Врачи клиники</SectionTitle>
-      <ul className="grid grid-cols-2 md:grid-cols-3 gap-2">
+      <ul className="grid grid-cols-2 lg:grid-cols-3 gap-4">
         {photos.map(({ name, surname, picture, alt, blob }, i) => (
           <li key={i} className="flex flex-col items-center">
-            <div className="aspect-square w-3/5 md:w-2/5 mb-8 md:mb-12 relative flex justify-center items-center">
+            <div className="aspect-square w-3/5 lg:w-2/5 mb-8 lg:mb-12 relative flex justify-center items-center">
               <Image src={picture} alt={alt} className="bg-contain" />
               {blob}
             </div>

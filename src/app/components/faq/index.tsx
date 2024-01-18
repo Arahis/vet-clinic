@@ -30,7 +30,7 @@ const QuestionTitle = ({
     <p
       ref={ref}
       className={classNames(
-        "text-2xl md:text-4xl py-6 md:py-24 transition-colors font-medium",
+        "text-2xl md:text-4xl py-6 md:py-16 xl:py-24 transition-colors font-medium",
         isInView ? "text-black" : "text-slate-200"
       )}
     >
@@ -63,18 +63,18 @@ const FAQ = () => {
   return (
     <div className="section-wrapper">
       <SectionTitle>Частые вопросы</SectionTitle>
-      <div className="grid grid-cols-1 md:grid-cols-2 w-full md:items-start gap-8 relative">
-        <ul className="max-w-sm selection:py-[20vh] md:py-[50vh] w-full">
+      <div className="grid grid-cols-1 lg:grid-cols-2 w-full lg:items-start gap-8 relative">
+        <ul className="max-w-sm sm:py-[20vh] md:py-[40vh] xl:py-[50vh] w-full">
           {faqs.map(({ title, id }) => (
             <li key={id}>
               <QuestionTitle id={id}>{title}</QuestionTitle>
             </li>
           ))}
         </ul>
-        <div className="w-full p-4 sticky bottom-0 left-0  md:top-0 flex md:h-screen place-items-center ">
+        <div className="w-full p-4 sticky bottom-0 left-0  lg:top-0 flex lg:h-screen place-items-center ">
           <div
             id="faq"
-            className="relative max-w-sm w-full ml-auto md:max-w-[unset] aspect-square bg-slate-200 rounded-xl overflow-hidden "
+            className="relative max-w-sm w-full ml-auto xl:max-w-[unset] aspect-square bg-slate-200 rounded-xl overflow-hidden "
           >
             {faqs.map(({ answer, id, gradient }) => (
               <AnswerText key={id} id={id} gradient={gradient}>

@@ -4,10 +4,10 @@ import SectionTitle from "./section-title";
 
 const Services = () => {
   return (
-    <div id="services" className="mt-32 md:m-0">
+    <div id="services" className="mt-32 lg:m-0">
       <SectionTitle hidden>Услуги клиники</SectionTitle>
-      <ul className="flex flex-col gap-8 md:flex-row md:items-start">
-        <div className="grid gap-8 md:flex-1">
+      <ul className="flex flex-col gap-8 lg:flex-row lg:items-start">
+        <div className="grid gap-8 lg:flex-1">
           <li className="services__item item__border border-peach-main">
             <p>Вакцинация</p>
           </li>
@@ -22,7 +22,7 @@ const Services = () => {
           </li>
         </div>
 
-        <div className="grid gap-8 md:mt-20 md:flex-1">
+        <div className="grid gap-8 lg:mt-20 lg:flex-1">
           <li className="services__item item__border border-orange-main">
             <p>Хирургия</p>
           </li>
