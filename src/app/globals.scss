@@ -52,11 +52,11 @@ body {
 }
 
 .section-wrapper {
-  @apply px-14;
+  @apply px-6 md:px-14;
 }
 
 .footer-wrapper {
-  @apply pt-14 px-24 pb-4 mx-4;
+  @apply p-8 md:pt-14 md:px-24 md:pb-4 md:mx-4;
 }
 
 .footer-section-title {
@@ -76,7 +76,7 @@ body {
 }
 
 .gallery__container {
-  @apply overflow-x-auto pl-20;
+  @apply overflow-x-auto pl-10 md:pl-20;
   -ms-overflow-style: none; /* IE and Edge */
   scrollbar-width: none; /* Firefox */
 }
@@ -84,7 +84,3 @@ body {
 .gallery__container::-webkit-scrollbar {
   display: none;
 }
-
-/* li.selected {
-  background: #eee;
-} */

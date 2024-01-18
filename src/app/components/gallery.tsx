@@ -2,7 +2,7 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
-import classNames from "classnames";
+import SectionTitle from "./section-title";
 
 const imgs = ["01", "02", "03", "04", "05", "06", "07", "08"];
 
@@ -17,7 +17,7 @@ const ImageWithRatio = ({ img }: { img: string }) => {
 
   return (
     <div
-      className="relative shrink-0 h-[35vh]"
+      className="relative shrink-0 h-[20vh] md:h-[35vh]"
       style={{ aspectRatio: `${ratio.naturalWidth}/${ratio.naturalHeight}` }}
     >
       <Image
@@ -40,13 +40,8 @@ const ImageWithRatio = ({ img }: { img: string }) => {
 
 const Gallery = () => {
   return (
-    <div className="pt-40 pb-60 bg-slate-50 max-w-[calc(100vw-7rem-2rem)]">
-      <h2
-        id="gallery"
-        className="font-accent text-center text-5xl leading-tight font-semibold mb-32"
-      >
-        Галлерея
-      </h2>
+    <div className="pt-10 pb-24 md:pt-40 md:pb-60 bg-slate-50 w-screen">
+      <SectionTitle id="gallery">Галлерея</SectionTitle>
       <div className="gallery__container">
         <div className="flex gap-1">
           {imgs.map((img) => (

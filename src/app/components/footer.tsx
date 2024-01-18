@@ -4,7 +4,7 @@ const Footer = () => {
   return (
     <footer id="contacts" className="bg-slate-50">
       <div className="footer-wrapper bg-slate-200 rounded-t-xl">
-        <div className="flex justify-between mb-8 gap-8">
+        <div className="md:flex md:justify-between md:gap-8 mb-8">
           <div className="basis-1/3">
             <h3 className="footer-section-title">Контакты</h3>
             <p className="text-xl">

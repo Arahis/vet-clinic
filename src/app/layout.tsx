@@ -27,15 +27,21 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={classNames(`${inter.variable}, ${IBM.variable}`)}>
-        <header className="flex justify-center items-center w-28 py-4 bg-slate-100">
-          <Image src={Logo} alt="Vercel Logo" priority width={80} />
-        </header>
-        <div className="flex gap-4">
-          <div className="sticky top-0 h-full basis-28 shrink-0">
-            <Navigation />
-          </div>
+        <div className="md:flex gap-4">
+          {/* <header
+            className="flex"
+            // className="flex justify-center items-center w-28 py-4 bg-slate-100"
+          >
+            <Image src={Logo} alt="Vercel Logo" priority width={80} />
+            <div
+            // className="md:sticky top-0 h-[770px] basis-28 shrink-0"
+            >
+              <Navigation />
+            </div>
+          </header> */}
           {children}
         </div>
+
         <Footer />
       </body>
     </html>
